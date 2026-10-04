@@ -16,6 +16,7 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 - Webservices da SVRS (`<libmdf/sefaz.h>`): autorização síncrona com a mensagem em gzip e base64 e o `mdfeProc`, status do serviço, consulta pela chave, eventos com o `procEventoMDFe` e MDF-e não encerrados; endereços em `docs/ENDERECOS.md`.
 - Testes contra os schemas oficiais e contra um servidor falso da SEFAZ (`tests/servidor_sefaz.py`, com TLS e certificado de cliente de teste).
 - Exemplo `examples/emitir_mdfe.c`, para a homologação no computador do mantenedor (`docs/HOMOLOGACAO.md`).
+- Primeira homologação real na SVRS (`docs/HOMOLOGACAO.md`): status, autorização, consulta, não encerrados, encerramento e cancelamento aceitos; endereços de homologação e URL do QR Code confirmados em `docs/ENDERECOS.md`.
 - Diagramas do leiaute em `docs/diagramas` e a lista de estruturas em `TODO.md`, gerados dos schemas.
 
 [Não lançado]: https://github.com/icaroraci/libmdf/commits/main
