@@ -10,5 +10,6 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 - Dependência da libnfe 1.x pelo `pkg-config`, e da libxml2, OpenSSL e zlib.
 - Versão da biblioteca em `<libmdf/versao.h>` (`MDF_VERSAO`) e em tempo de execução (`mdf_versao()`).
 - Roteiro em `docs/ROTEIRO.md`.
+- Schemas oficiais do MDF-e 3.00 (PL_MDFe_300b, NT 2025.001) em `tests/schemas/mdfe`, sem alteração e com os hashes conferidos no CI, e a configuração dos geradores da libnfe em `tools/documento.json`.
 
 [Não lançado]: https://github.com/icaroraci/libmdf/commits/main

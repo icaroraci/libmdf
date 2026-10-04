@@ -1,0 +1,21 @@
+{
+  "documento": "MDF-e",
+  "versao": "3.00",
+  "artigo": "do",
+  "biblioteca": "libmdf",
+  "schemas": "tests/schemas/mdfe",
+  "tipos": ["tiposGeralMDFe_v3.00.xsd", "mdfeModalRodoviario_v3.00.xsd"],
+  "leiaute": "mdfeTiposBasico_v3.00.xsd",
+  "raiz": {"elemento": "MDFe", "tipo": "TMDFe"},
+  "repositorio": "icaroraci/libmdf",
+  "ramo": "main",
+  "padroes": {"saida": "src/libmdf/padroes.h", "prefixo": "MDF_"},
+  "esquemas": {
+    "saida": "src/libmdf/esquemas.c",
+    "cabecalho": "src/libmdf/esquemas.h",
+    "prefixo": "mdf_esq_",
+    "raizes": ["ide", "emit", "infDoc", "seg", "prodPred", "tot", "lacres",
+               "infAdic", "infRespTec", "rodo"]
+  },
+  "diagramas": {"saida": "docs/diagramas", "todo": "TODO.md"}
+}
