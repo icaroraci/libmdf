@@ -24,9 +24,8 @@ jobs:
     env:
       CC: ${{ matrix.cc }}
       # Versão da libnfe (branch, tag ou commit do tooldoce) usada no CI.
-      # Branch de icaroraci/tooldoce#278 (caminho exato no motor de
-      # grupos) até o merge; depois, master.
-      LIBNFE_REF: claude/project-thread-dyl1yz
+      # Precisa do caminho exato no motor de grupos (icaroraci/tooldoce#278).
+      LIBNFE_REF: master
     steps:
       - uses: actions/checkout@v4
 

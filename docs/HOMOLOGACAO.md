@@ -7,7 +7,7 @@ A homologação roda no computador do mantenedor (WSL), com o certificado A1 da 
 ## Como rodar
 
 ```sh
-sh .github/scripts/instalar_libnfe.sh "$HOME/.local/libnfe" claude/project-thread-dyl1yz   # ou master, depois do tooldoce#278
+sh .github/scripts/instalar_libnfe.sh "$HOME/.local/libnfe"
 export PKG_CONFIG_PATH="$HOME/.local/libnfe/lib/pkgconfig"
 make exemplos
 
