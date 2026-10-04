@@ -79,15 +79,15 @@ jobs:
         run: |
           destino="$RUNNER_TEMP/destino"
           make install DESTDIR="$destino" PREFIX=/usr
-          test -f "$destino/usr/lib/libmdf.so.0.1.0"
-          test -L "$destino/usr/lib/libmdf.so.0"
+          test -f "$destino/usr/lib/libmdf.so.1.0.0"
+          test -L "$destino/usr/lib/libmdf.so.1"
           test -L "$destino/usr/lib/libmdf.so"
           test -f "$destino/usr/include/libmdf/versao.h"
           test -f "$destino/usr/include/libmdf/mdfe.h"
           test -f "$destino/usr/include/libmdf/evento.h"
           test -f "$destino/usr/include/libmdf/sefaz.h"
           test -f "$destino/usr/lib/pkgconfig/libmdf.pc"
-          readelf -d "$destino/usr/lib/libmdf.so.0.1.0" | grep -q 'SONAME.*libmdf\.so\.0'
+          readelf -d "$destino/usr/lib/libmdf.so.1.0.0" | grep -q 'SONAME.*libmdf\.so\.1'
           PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$destino/usr/lib/pkgconfig" pkg-config --exists libmdf
           make uninstall DESTDIR="$destino" PREFIX=/usr
           test -z "$(find "$destino" -type f -o -type l)"

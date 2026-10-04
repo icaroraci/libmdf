@@ -62,7 +62,7 @@ static mdf_mdfe *mdfe_teste(const char *tpemis)
 	SET(ide, "dhEmi", "2026-10-04T10:00:00-03:00");
 	SET(ide, "tpEmis", tpemis);
 	SET(ide, "procEmi", "0");
-	SET(ide, "verProc", "libmdf 0.1");
+	SET(ide, "verProc", "libmdf 1.0");
 	SET(ide, "UFIni", "RS");
 	SET(ide, "UFFim", "RS");
 	VERIFICA_INT(nfe_grupo_add(ide, "infMunCarrega", &item), 0);
