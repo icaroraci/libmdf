@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='724' height='2009' viewBox='0 0 724 2009'>
+<rect width='100%' height='100%' fill='#ffffff'/>
+<text x='20' y='26' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#1a1a1a'>MDFe › infMDFe › ide</text><text x='20' y='42' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>Gerado de mdfeTiposBasico_v3.00.xsd por tools/gerar_diagramas.py — caixa tracejada: opcional; ⊞: estrutura com diagrama próprio</text>
+
+<rect x='374' y='52' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='52' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='68' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>cUF</text>
+<text x='382' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TCodUfIBGE</title>TCodUfIBGE</text>
+<text x='382' y='101' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='101' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 35, 41, 42, 43, 50, 51, 52, 53</title>11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 2…</text>
+<text x='382' y='120' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Código da UF do emitente do MDF-e</text>
+
+
+<rect x='374' y='145' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='145' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='161' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>tpAmb</text>
+<text x='382' y='179' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='179' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TAmb</title>TAmb</text>
+<text x='382' y='194' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='194' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1, 2</title>1, 2</text>
+<text x='382' y='213' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Tipo do Ambiente</text>
+
+
+<rect x='374' y='238' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='238' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='254' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>tpEmit</text>
+<text x='382' y='272' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='272' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TEmit</title>TEmit</text>
+<text x='382' y='287' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='287' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1, 2, 3</title>1, 2, 3</text>
+<text x='382' y='306' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Tipo do Emitente</text>
+
+
+<rect x='374' y='331' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='331' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='347' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>tpTransp</text>
+<text x='696' y='347' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='365' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='365' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TTransp</title>TTransp</text>
+<text x='382' y='380' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='380' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1, 2, 3</title>1, 2, 3</text>
+<text x='382' y='399' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Tipo do Transportador</text>
+
+
+<rect x='374' y='424' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='424' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='440' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>mod</text>
+<text x='382' y='458' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='458' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TModMD</title>TModMD</text>
+<text x='382' y='473' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='473' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>58</title>58</text>
+<text x='382' y='492' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Modelo do Manifesto Eletrônico</text>
+
+
+<rect x='374' y='517' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='517' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='533' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>serie</text>
+<text x='382' y='551' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='551' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TSerie</title>TSerie</text>
+<text x='382' y='566' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='566' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>0|[1-9]{1}[0-9]{0,2}</title>0|[1-9]{1}[0-9]{0,2}</text>
+<text x='382' y='585' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Série do Manifesto</text>
+
+
+<rect x='374' y='610' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='610' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='626' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>nMDF</text>
+<text x='382' y='644' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='644' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TNF</title>TNF</text>
+<text x='382' y='659' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='659' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>[1-9]{1}[0-9]{0,8}</title>[1-9]{1}[0-9]{0,8}</text>
+<text x='382' y='678' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Número do Manifesto</text>
+
+
+<rect x='374' y='703' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='703' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='719' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>cMDF</text>
+<text x='382' y='737' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='737' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>string</title>string</text>
+<text x='382' y='752' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='752' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>[0-9]{8}</title>[0-9]{8}</text>
+<text x='382' y='771' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Código numérico que compõe a Chave de Acesso.</text>
+
+
+<rect x='374' y='796' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='796' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='812' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>cDV</text>
+<text x='382' y='830' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='830' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>string</title>string</text>
+<text x='382' y='845' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='845' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>[0-9]{1}</title>[0-9]{1}</text>
+<text x='382' y='864' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Digito verificador da chave de acesso do Manifesto</text>
+
+
+<rect x='374' y='889' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='889' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='905' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>modal</text>
+<text x='382' y='923' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='923' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TModalMD</title>TModalMD</text>
+<text x='382' y='938' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='938' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1, 2, 3, 4</title>1, 2, 3, 4</text>
+<text x='382' y='957' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Modalidade de transporte</text>
+
+
+<rect x='374' y='982' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='982' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='998' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>dhEmi</text>
+<text x='382' y='1016' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1016' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TDateTimeUTC</title>TDateTimeUTC</text>
+<text x='382' y='1031' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='1031' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))T(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d([\-,\+](0[0-9]|10|11):00|([\+](12):00))</title>(((20(([02468][048])|([13579][26]))-02-29…</text>
+<text x='382' y='1050' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Data e hora de emissão do Manifesto</text>
+
+
+<rect x='374' y='1075' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1075' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1091' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>tpEmis</text>
+<text x='382' y='1109' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1109' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>string</title>string</text>
+<text x='382' y='1124' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1124' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1, 2, 3</title>1, 2, 3</text>
+<text x='382' y='1143' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Forma de emissão do Manifesto</text>
+
+
+<rect x='374' y='1168' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1168' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1184' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>procEmi</text>
+<text x='382' y='1202' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1202' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TProcEmi</title>TProcEmi</text>
+<text x='382' y='1217' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1217' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>0, 4</title>0, 4</text>
+<text x='382' y='1236' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Identificação do processo de emissão do Manifesto</text>
+
+
+<rect x='374' y='1261' width='330' height='94' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1261' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1277' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>verProc</text>
+<text x='382' y='1295' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1295' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TString</title>TString</text>
+<text x='382' y='1310' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tamanho</text>
+<text x='448' y='1310' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1 a 20</title>1 a 20</text>
+<text x='382' y='1325' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='1325' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}</title>[!-ÿ]{1}[ -ÿ]{0,}[!-ÿ]{1}|[!-ÿ]{1}</text>
+<text x='382' y='1344' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Versão do processo de emissão</text>
+
+
+<rect x='374' y='1369' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1369' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1385' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>UFIni</text>
+<text x='382' y='1403' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1403' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TUf</title>TUf</text>
+<text x='382' y='1418' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1418' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, EX</title>AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, M…</text>
+<text x='382' y='1437' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Sigla da UF do Carregamento</text>
+
+
+<rect x='374' y='1462' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1462' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1478' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>UFFim</text>
+<text x='382' y='1496' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1496' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TUf</title>TUf</text>
+<text x='382' y='1511' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1511' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, EX</title>AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, M…</text>
+<text x='382' y='1530' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Sigla da UF do Descarregamento</text>
+
+<a href='ide/infMunCarrega.svg'>
+<rect x='374' y='1555' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='1555' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='1571' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infMunCarrega ⊞</text>
+<text x='696' y='1571' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>1..50</text>
+<text x='382' y='1589' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='1589' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='1608' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações dos Municípios de Carregamento</text>
+</a>
+<a href='ide/infPercurso.svg'>
+<rect x='374' y='1633' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='1633' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='1649' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infPercurso ⊞</text>
+<text x='696' y='1649' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..25</text>
+<text x='382' y='1667' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='1667' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='1686' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações do Percurso do MDF-e</text>
+</a>
+
+<rect x='374' y='1711' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='1711' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='1727' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>dhIniViagem</text>
+<text x='696' y='1727' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='1745' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1745' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TDateTimeUTC</title>TDateTimeUTC</text>
+<text x='382' y='1760' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>padrão</text>
+<text x='448' y='1760' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))T(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d([\-,\+](0[0-9]|10|11):00|([\+](12):00))</title>(((20(([02468][048])|([13579][26]))-02-29…</text>
+<text x='382' y='1779' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Data e hora previstos de inicio da viagem</text>
+
+
+<rect x='374' y='1804' width='330' height='79' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='1804' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='1820' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>indCanalVerde</text>
+<text x='696' y='1820' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='1838' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1838' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>string</title>string</text>
+<text x='382' y='1853' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1853' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1</title>1</text>
+<text x='382' y='1872' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Indicador de participação do Canal Verde</text>
+
+
+<rect x='374' y='1897' width='330' height='92' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='1897' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='1913' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>indCarregaPosterior</text>
+<text x='696' y='1913' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='1931' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>tipo</text>
+<text x='448' y='1931' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>string</title>string</text>
+<text x='382' y='1946' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>valores</text>
+<text x='448' y='1946' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>1</title>1</text>
+<text x='382' y='1965' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Indicador de MDF-e com inclusão da Carga posterior a</text>
+<text x='382' y='1978' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>emissão por evento de inclusão de DF-e</text>
+
+<rect x='284' y='972.5' width='56' height='26' rx='13' fill='#f3f6f9' stroke='#7a8a99'/>
+<text x='312.0' y='989.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' text-anchor='middle' fill='#1a1a1a'>seq.</text>
+<path d='M340,985.5 H357.0 V63 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V156 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V249 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V342 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V435 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V528 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V621 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V714 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V807 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V900 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V993 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1086 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1179 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1272 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1380 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1473 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1566 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1644 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1722 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1815 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,985.5 H357.0 V1908 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+
+<rect x='20' y='974.5' width='230' height='49' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='20' y='974.5' width='230' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='28' y='990.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>ide</text>
+<text x='28' y='1012.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Identificação do MDF-e</text>
+
+<path d='M250,985.5 H267.0 V985.5 H284' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+</svg>

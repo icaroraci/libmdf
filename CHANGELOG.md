@@ -11,5 +11,11 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 - Versão da biblioteca em `<libmdf/versao.h>` (`MDF_VERSAO`) e em tempo de execução (`mdf_versao()`).
 - Roteiro em `docs/ROTEIRO.md`.
 - Schemas oficiais do MDF-e 3.00 (PL_MDFe_300b, NT 2025.001) em `tests/schemas/mdfe`, sem alteração e com os hashes conferidos no CI, e a configuração dos geradores da libnfe em `tools/documento.json`.
+- MDF-e 3.00 com o modal rodoviário (`<libmdf/mdfe.h>`): grupos do leiaute pelo motor de grupos da libnfe, gerados dos schemas oficiais (`src/libmdf/esquemas.c`); chave de acesso, cDV e Id calculados; `mdf_assinar` assina `infMDFe` e acrescenta o QR Code, com o parâmetro `sign` em contingência.
+- Eventos do MDF-e (`<libmdf/evento.h>`): cancelamento, encerramento, inclusão de condutor, inclusão de DF-e e pagamento da operação.
+- Webservices da SVRS (`<libmdf/sefaz.h>`): autorização síncrona com a mensagem em gzip e base64 e o `mdfeProc`, status do serviço, consulta pela chave, eventos com o `procEventoMDFe` e MDF-e não encerrados; endereços em `docs/ENDERECOS.md`.
+- Testes contra os schemas oficiais e contra um servidor falso da SEFAZ (`tests/servidor_sefaz.py`, com TLS e certificado de cliente de teste).
+- Exemplo `examples/emitir_mdfe.c`, para a homologação no computador do mantenedor (`docs/HOMOLOGACAO.md`).
+- Diagramas do leiaute em `docs/diagramas` e a lista de estruturas em `TODO.md`, gerados dos schemas.
 
 [Não lançado]: https://github.com/icaroraci/libmdf/commits/main

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='724' height='240' viewBox='0 0 724 240'>
+<rect width='100%' height='100%' fill='#ffffff'/>
+<text x='20' y='26' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#1a1a1a'>MDFe › infMDFe › prodPred › infLotacao</text><text x='20' y='42' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>Gerado de mdfeTiposBasico_v3.00.xsd por tools/gerar_diagramas.py — caixa tracejada: opcional; ⊞: estrutura com diagrama próprio</text>
+<a href='infLotacao/infLocalCarrega.svg'>
+<rect x='374' y='52' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='52' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='68' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infLocalCarrega ⊞</text>
+<text x='382' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='105' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações da localização de carregamento do MDF-e</text>
+<text x='382' y='118' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>de carga lotação</text>
+</a>
+<a href='infLotacao/infLocalDescarrega.svg'>
+<rect x='374' y='143' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='143' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='159' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infLocalDescarrega ⊞</text>
+<text x='382' y='177' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='177' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='196' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações da localização de descarregamento do</text>
+<text x='382' y='209' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>MDF-e de carga lotação</text>
+</a>
+<rect x='284' y='95.5' width='56' height='26' rx='13' fill='#f3f6f9' stroke='#7a8a99'/>
+<text x='312.0' y='112.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' text-anchor='middle' fill='#1a1a1a'>seq.</text>
+<path d='M340,108.5 H357.0 V63 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,108.5 H357.0 V154 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+
+<rect x='20' y='97.5' width='230' height='75' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='20' y='97.5' width='230' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='28' y='113.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infLotacao</text>
+<text x='242' y='113.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='28' y='135.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações da carga lotação.</text>
+<text x='28' y='148.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informar somente quando MDF-e for</text>
+<text x='28' y='161.5' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>de carga lotação</text>
+
+<path d='M250,108.5 H267.0 V108.5 H284' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+</svg>

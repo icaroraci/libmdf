@@ -9,7 +9,32 @@ A libmdf é construída sobre a [libnfe](https://github.com/icaroraci/tooldoce),
 
 ## Situação
 
-Início do projeto (0.1.0-dev): estrutura, dependência da libnfe e CI. Nada do MDF-e está pronto ainda.
+Em desenvolvimento (0.1.0-dev). O caminho completo do MDF-e com o modal rodoviário está pronto e testado contra os schemas oficiais e um servidor falso da SEFAZ. Ainda falta a homologação real na SVRS ([`docs/HOMOLOGACAO.md`](docs/HOMOLOGACAO.md)).
+
+| Parte | Header |
+|---|---|
+| MDF-e 3.00 com modal rodoviário: grupos pelo motor de grupos da libnfe, chave de acesso, XML, assinatura e QR Code (normal e contingência) | `<libmdf/mdfe.h>` |
+| Eventos: cancelamento, encerramento, inclusão de condutor, inclusão de DF-e e pagamento da operação | `<libmdf/evento.h>` |
+| Webservices da SVRS: autorização síncrona (gzip e base64), status, consulta, eventos e MDF-e não encerrados | `<libmdf/sefaz.h>` |
+
+O que falta está em [`docs/ROTEIRO.md`](docs/ROTEIRO.md) e a lista de grupos do leiaute, em [`TODO.md`](TODO.md).
+
+## Uso
+
+```c
+mdf_mdfe *m = mdf_mdfe_new();
+nfe_grupo *ide = mdf_mdfe_grupo(m, "ide");
+nfe_grupo_set(ide, "cUF", "43");
+/* ... ide, emit, rodo, infDoc, tot (ver examples/emitir_mdfe.c) ... */
+nfe_grupo_set(mdf_mdfe_grupo(m, "rodo"), "veicTracao/placa", "ABC1D23");
+
+mdf_mdfe_xml(m, &xml, &tam);                    /* chave, cDV e Id */
+mdf_assinar(cert, xml, tam, &mdfe, NULL);       /* assinatura e QR Code */
+mdf_sefaz_endereco(NFE_AMBIENTE_HOMOLOGACAO, MDF_SERVICO_AUTORIZACAO, &url);
+mdf_sefaz_autorizar(s, url, mdfe, &cstat, motivo, sizeof motivo, &proc, NULL);
+```
+
+O exemplo [`examples/emitir_mdfe.c`](examples/emitir_mdfe.c) emite, consulta e encerra um MDF-e na homologação, com os dados do emitente em variáveis de ambiente.
 
 ## Dependências
 

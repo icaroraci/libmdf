@@ -157,7 +157,9 @@ $(LOBJ)/%: examples/%.c $(LIB)/$(LIBNAME) | $(LOBJ)
 
 #Formatação (.clang-format)
 CLANG_FORMAT ?= clang-format
-FONTES_C = $(wildcard $(SOURCE)/*.c $(INCLUDE)/libmdf/*.h tests/*.c tests/*.h examples/*.c)
+#Arquivos gerados por tools/documento.json ficam como o gerador os escreve
+GERADOS  = $(SOURCE)/esquemas.c $(SOURCE)/esquemas.h $(SOURCE)/padroes.h
+FONTES_C = $(filter-out $(GERADOS),$(wildcard $(SOURCE)/*.c $(SOURCE)/*.h $(INCLUDE)/libmdf/*.h tests/*.c tests/*.h examples/*.c))
 
 formatar:
 	$(CLANG_FORMAT) -i $(FONTES_C)

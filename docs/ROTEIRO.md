@@ -12,15 +12,20 @@ A libmdf depende da [libnfe](https://github.com/icaroraci/tooldoce) 1.x e não d
 | Envio SOAP 1.2 com TLS e certificado cliente aos webservices do MDF-e | `nfe_sefaz_enviar_ws` (`sefaz.h`, icaroraci/tooldoce#273) |
 | Validação contra os XSD do MDF-e | `nfe_validador_xsd`, `nfe_validar_xsd` (`validar.h`, icaroraci/tooldoce#273) |
 
-## O que falta, na libmdf
+## O que já foi feito, na libmdf
 
-1. **XML do MDF-e** (leiaute 3.00): `ide` (UF de carregamento e de descarregamento, percurso), `emit`, `infDoc` (NF-e e CT-e por município de descarregamento), `seg`, `prodPred`, `tot`, `lacres`, `autXML`, `infAdic`, `infRespTec`, validado contra o XSD.
-2. **Modal rodoviário** (`infModal`): veículo de tração, reboques, condutores, CIOT, vale-pedágio, contratantes e pagamento do frete.
-3. **QR Code** (`infMDFeSupl/qrCodMDFe`), em emissão normal e em contingência (com `sign`).
-4. **Autorização síncrona** (`MDFeRecepcaoSinc`, mensagem compactada em gzip e codificada em base64) com `mdfeProc`; status do serviço e consulta.
-5. **Eventos**: encerramento, cancelamento, inclusão de condutor e de DF-e, pagamento da operação; consulta de MDF-e não encerrados.
-6. **Homologação real** na SVRS, registrada em `docs/HOMOLOGACAO.md` (só chaves, protocolos e cStat).
-7. Modais aéreo, aquaviário e ferroviário; distribuição de DF-e.
+1. **XML do MDF-e** (leiaute 3.00): os grupos de `infMDFe` pelo motor de grupos (`ide`, `emit`, `infDoc`, `seg`, `prodPred`, `tot`, `lacres`, `autXML`, `infAdic`, `infRespTec`), com a chave, o cDV e o Id calculados, validado contra o XSD (`mdfe.h`).
+2. **Modal rodoviário** (`infModal`/`rodo`): veículo de tração, reboques, condutores, CIOT, vale-pedágio, contratantes e pagamento do frete, validado contra `mdfeModalRodoviario_v3.00.xsd`.
+3. **QR Code** (`infMDFeSupl/qrCodMDFe`), em emissão normal e em contingência (com `sign`, a assinatura RSA-SHA1 da chave).
+4. **Autorização síncrona** (`MDFeRecepcaoSinc`, gzip e base64) com `mdfeProc`; status do serviço, consulta pela chave e MDF-e não encerrados (`sefaz.h`).
+5. **Eventos**: cancelamento, encerramento, inclusão de condutor, inclusão de DF-e e pagamento da operação (`evento.h`), com `procEventoMDFe`.
+
+## O que falta
+
+1. **Homologação real** na SVRS, registrada em `docs/HOMOLOGACAO.md` (só chaves, protocolos e cStat), pelo mantenedor no WSL. Os endereços dos webservices e do QR Code ficam marcados "(conferir)" em `docs/ENDERECOS.md` até lá.
+2. Eventos de outros autores ou mais raros: alteração do pagamento do serviço (110118) e confirmação do serviço de transporte (110117, do contratante).
+3. Modais aéreo, aquaviário e ferroviário; distribuição de DF-e (`MDFeDistribuicaoDFe`).
+4. Grupos de regimes especiais em `infMDFe`: Nota Fiscal Fácil (`infSolicNFF`) e Provedor de Assinatura e Autorização (`infPAA`).
 
 O DAMDFE (impressão) fica fora do escopo: é responsabilidade do programa emissor, que recebe o `mdfeProc` autorizado.
 

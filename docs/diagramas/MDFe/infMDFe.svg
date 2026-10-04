@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='724' height='1137' viewBox='0 0 724 1137'>
+<rect width='100%' height='100%' fill='#ffffff'/>
+<text x='20' y='26' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='15' font-weight='bold' fill='#1a1a1a'>MDFe › infMDFe</text><text x='20' y='42' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>Gerado de mdfeTiposBasico_v3.00.xsd por tools/gerar_diagramas.py — caixa tracejada: opcional; ⊞: estrutura com diagrama próprio</text>
+<a href='infMDFe/ide.svg'>
+<rect x='374' y='52' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='52' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='68' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>ide ⊞</text>
+<text x='382' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='86' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='105' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Identificação do MDF-e</text>
+</a>
+<a href='infMDFe/emit.svg'>
+<rect x='374' y='130' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='130' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='146' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>emit ⊞</text>
+<text x='382' y='164' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='164' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='183' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Identificação do Emitente do Manifesto</text>
+</a>
+<a href='infMDFe/infModal.svg'>
+<rect x='374' y='208' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='208' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='224' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infModal ⊞</text>
+<text x='382' y='242' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='242' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='261' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações do modal</text>
+</a>
+<a href='infMDFe/infDoc.svg'>
+<rect x='374' y='286' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='286' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='302' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infDoc ⊞</text>
+<text x='382' y='320' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='320' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='339' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações dos Documentos fiscais vinculados ao</text>
+<text x='382' y='352' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>manifesto</text>
+</a>
+<a href='infMDFe/seg.svg'>
+<rect x='374' y='377' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='377' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='393' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>seg ⊞</text>
+<text x='696' y='393' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..∞</text>
+<text x='382' y='411' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='411' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='430' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações de Seguro da Carga</text>
+</a>
+<a href='infMDFe/prodPred.svg'>
+<rect x='374' y='455' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='455' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='471' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>prodPred ⊞</text>
+<text x='696' y='471' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='489' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='489' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='508' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Produto predominante</text>
+</a>
+<a href='infMDFe/tot.svg'>
+<rect x='374' y='533' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='374' y='533' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='382' y='549' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>tot ⊞</text>
+<text x='382' y='567' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='567' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='586' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Totalizadores da carga transportada e seus</text>
+<text x='382' y='599' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>documentos fiscais</text>
+</a>
+<a href='infMDFe/lacres.svg'>
+<rect x='374' y='624' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='624' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='640' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>lacres ⊞</text>
+<text x='696' y='640' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..∞</text>
+<text x='382' y='658' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='658' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='677' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Lacres do MDF-e</text>
+</a>
+<a href='infMDFe/autXML.svg'>
+<rect x='374' y='702' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='702' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='718' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>autXML ⊞</text>
+<text x='696' y='718' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..10</text>
+<text x='382' y='736' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='736' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='755' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Autorizados para download do XML do DF-e</text>
+</a>
+<a href='infMDFe/infAdic.svg'>
+<rect x='374' y='780' width='330' height='64' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='780' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='796' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infAdic ⊞</text>
+<text x='696' y='796' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='814' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='814' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='833' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações Adicionais</text>
+</a>
+<a href='infMDFe/infRespTec.svg'>
+<rect x='374' y='858' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='858' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='874' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infRespTec ⊞</text>
+<text x='696' y='874' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='892' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='892' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TRespTec — ver diagrama próprio</title>TRespTec — ver diagrama próprio</text>
+<text x='382' y='911' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações do Responsável Técnico pela emissão do</text>
+<text x='382' y='924' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>DF-e</text>
+</a>
+<a href='infMDFe/infSolicNFF.svg'>
+<rect x='374' y='949' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='949' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='965' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infSolicNFF ⊞</text>
+<text x='696' y='965' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='983' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='983' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='1002' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Grupo de informações do pedido de emissão da Nota</text>
+<text x='382' y='1015' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Fiscal Fácil</text>
+</a>
+<a href='infMDFe/infPAA.svg'>
+<rect x='374' y='1040' width='330' height='77' rx='3' fill='#fff2cc' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<rect x='374' y='1040' width='330' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3' stroke-dasharray='5,3'/>
+<text x='382' y='1056' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infPAA ⊞</text>
+<text x='696' y='1056' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' text-anchor='end' fill='#1f4e79'>0..1</text>
+<text x='382' y='1074' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#5f6b76'>estrutura</text>
+<text x='448' y='1074' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ver diagrama próprio</title>ver diagrama próprio</text>
+<text x='382' y='1093' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Grupo de Informação do Provedor de Assinatura e</text>
+<text x='382' y='1106' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Autorização</text>
+</a>
+<rect x='284' y='544.0' width='56' height='26' rx='13' fill='#f3f6f9' stroke='#7a8a99'/>
+<text x='312.0' y='561.0' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' text-anchor='middle' fill='#1a1a1a'>seq.</text>
+<path d='M340,557.0 H357.0 V63 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V141 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V219 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V297 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V388 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V466 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V544 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V635 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V713 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V791 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V869 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V960 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+<path d='M340,557.0 H357.0 V1051 H374' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+
+<rect x='20' y='546.0' width='230' height='49' rx='3' fill='#ffffff' stroke='#1f4e79' stroke-width='1.3'/>
+<rect x='20' y='546.0' width='230' height='22' rx='3' fill='#dce9f5' stroke='#1f4e79' stroke-width='1.3'/>
+<text x='28' y='562.0' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='13' font-weight='bold' fill='#1a1a1a'>infMDFe</text>
+<text x='28' y='584.0' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-style='italic' fill='#5f6b76'>Informações do MDF-e</text>
+
+<text x='28' y='606.0' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>TVerMDe 3\.00</title>@versao <tspan fill='#5f6b76'>obrigatório</tspan></text>
+<text x='28' y='621.0' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#1a1a1a'><title>ID MDFe[0-9]{44}</title>@Id <tspan fill='#5f6b76'>obrigatório</tspan></text>
+<path d='M250,557.0 H267.0 V557.0 H284' fill='none' stroke='#7a8a99' stroke-width='1.2'/>
+</svg>
