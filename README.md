@@ -40,13 +40,13 @@ O exemplo [`examples/emitir_mdfe.c`](examples/emitir_mdfe.c) emite, consulta e e
 
 ## Dependências
 
-- [libnfe](https://github.com/icaroraci/tooldoce) 1.0.0-rc3 ou posterior (o motor de grupos como API), encontrada pelo `pkg-config` (`libnfe.pc`, instalado pelo `make install` do tooldoce), com as dependências dela (libxml2, xmlsec1 com OpenSSL e libcurl).
+- [libnfe](https://github.com/icaroraci/tooldoce) 1.0.0-rc4 ou posterior (o motor de grupos como API), encontrada pelo `pkg-config` (`libnfe.pc`, instalado pelo `make install` do tooldoce), com as dependências dela (libxml2, xmlsec1 com OpenSSL e libcurl).
 - libxml2, OpenSSL (`libssl-dev`) e zlib (`zlib1g-dev`, para a mensagem compactada da autorização), usadas diretamente.
 - Compilador C99 (gcc ou clang) e GNU make.
 
 ```sh
 # libnfe num prefixo, com o script do CI
-sh .github/scripts/instalar_libnfe.sh "$HOME/.local/libnfe" v1.0.0-rc3
+sh .github/scripts/instalar_libnfe.sh "$HOME/.local/libnfe" v1.0.0-rc4
 export PKG_CONFIG_PATH="$HOME/.local/libnfe/lib/pkgconfig"
 ```
 
