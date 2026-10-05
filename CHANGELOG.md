@@ -11,7 +11,7 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 
 ### Corrigido
 
-- A UF do reboque (`veicReboque/UF`) não podia ser preenchida: `"UF"` no grupo do reboque gravava a UF do proprietário. Corrigido no motor de grupos da libnfe (icaroraci/tooldoce#280).
+- A UF do reboque (`veicReboque/UF`) não podia ser preenchida: `"UF"` no grupo do reboque gravava a UF do proprietário. Corrigido no motor de grupos da libnfe (icaroraci/tooldoce#280, ainda sem versão publicada).
 
 ## [1.0.0-rc1] - 2026-10-04
 

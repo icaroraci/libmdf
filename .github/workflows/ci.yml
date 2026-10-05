@@ -25,9 +25,9 @@ jobs:
       CC: ${{ matrix.cc }}
       # Versão da libnfe (branch, tag ou commit do tooldoce) usada no CI.
       # A libmdf requer a 1.0.0-rc3 ou posterior (motor de grupos como API).
-      # Branch de icaroraci/tooldoce#280 (UF do reboque) até o merge; depois,
-      # a próxima versão da libnfe.
-      LIBNFE_REF: claude/project-thread-dyl1yz
+      # Master até a próxima versão da libnfe, com a UF do reboque
+      # (icaroraci/tooldoce#280).
+      LIBNFE_REF: master
     steps:
       - uses: actions/checkout@v4
 
