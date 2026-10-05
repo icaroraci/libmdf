@@ -4,10 +4,14 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 
 ## [Não lançado]
 
+## [1.0.0-rc1] - 2026-10-04
+
+Candidata à primeira versão estável (1.0.0). Cobre a emissão do MDF-e 3.00 com o modal rodoviário, da montagem do XML aos eventos na SVRS, testada na homologação real (ver [`docs/HOMOLOGACAO.md`](docs/HOMOLOGACAO.md)). Requer a libnfe 1.0.0-rc3 ou posterior.
+
 ### Adicionado
 
-- Estrutura do projeto, no modelo da [libnfc](https://github.com/icaroraci/libnfc): Makefile (biblioteca `libmdf.so.0`, testes, `make install` com `libmdf.pc`), testes com AddressSanitizer e UBSan, CI com gcc e clang e `.clang-format`.
-- Dependência da libnfe 1.x pelo `pkg-config`, e da libxml2, OpenSSL e zlib.
+- Estrutura do projeto, no modelo da [libnfc](https://github.com/icaroraci/libnfc): Makefile (biblioteca `libmdf.so.1`, testes, `make install` com `libmdf.pc`), testes com AddressSanitizer e UBSan, CI com gcc e clang e `.clang-format`.
+- Dependência da libnfe 1.x (1.0.0-rc3 ou posterior, com o motor de grupos como API) pelo `pkg-config`, e da libxml2, OpenSSL e zlib.
 - Versão da biblioteca em `<libmdf/versao.h>` (`MDF_VERSAO`) e em tempo de execução (`mdf_versao()`).
 - Roteiro em `docs/ROTEIRO.md`.
 - Schemas oficiais do MDF-e 3.00 (PL_MDFe_300b, NT 2025.001) em `tests/schemas/mdfe`, sem alteração e com os hashes conferidos no CI, e a configuração dos geradores da libnfe em `tools/documento.json`.
@@ -19,4 +23,5 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 - Primeira homologação real na SVRS (`docs/HOMOLOGACAO.md`): status, autorização, consulta, não encerrados, encerramento e cancelamento aceitos; endereços de homologação e URL do QR Code confirmados em `docs/ENDERECOS.md`.
 - Diagramas do leiaute em `docs/diagramas` e a lista de estruturas em `TODO.md`, gerados dos schemas.
 
-[Não lançado]: https://github.com/icaroraci/libmdf/commits/main
+[Não lançado]: https://github.com/icaroraci/libmdf/compare/v1.0.0-rc1...HEAD
+[1.0.0-rc1]: https://github.com/icaroraci/libmdf/releases/tag/v1.0.0-rc1

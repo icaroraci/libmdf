@@ -1,7 +1,9 @@
 # libmdf
 
 [![CI](https://github.com/icaroraci/libmdf/actions/workflows/ci.yml/badge.svg)](https://github.com/icaroraci/libmdf/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/icaroraci/libmdf?include_prereleases&label=vers%C3%A3o)](https://github.com/icaroraci/libmdf/releases)
 [![Licença: LGPL v3+](https://img.shields.io/badge/licen%C3%A7a-LGPLv3%2B-blue.svg)](LICENSE)
+[![MDF-e homologado](https://img.shields.io/badge/MDF--e%2058-homologado%20na%20SVRS-brightgreen.svg)](docs/HOMOLOGACAO.md)
 
 Biblioteca C para emissão de MDF-e (Manifesto Eletrônico de Documentos Fiscais, modelo 58).
 
@@ -9,7 +11,7 @@ A libmdf é construída sobre a [libnfe](https://github.com/icaroraci/tooldoce),
 
 ## Situação
 
-Em desenvolvimento (0.1.0-dev). O caminho completo do MDF-e com o modal rodoviário está pronto e testado contra os schemas oficiais e um servidor falso da SEFAZ. Ainda falta a homologação real na SVRS ([`docs/HOMOLOGACAO.md`](docs/HOMOLOGACAO.md)).
+**Versão 1.0.0-rc1**, candidata à 1.0 (ver o [histórico de mudanças](CHANGELOG.md)). O caminho completo do MDF-e com o modal rodoviário está pronto: montagem do XML, assinatura e QR Code, autorização, consulta, não encerrados, encerramento e cancelamento, testados contra os schemas oficiais e na homologação real da SVRS ([`docs/HOMOLOGACAO.md`](docs/HOMOLOGACAO.md)). A partir da 1.0, a API segue o [versionamento semântico](https://semver.org/lang/pt-BR/): mudanças incompatíveis só numa nova versão maior, que também troca o `SONAME` (`libmdf.so.1`). A versão fica em `<libmdf/versao.h>` (`MDF_VERSAO`) e, em tempo de execução, em `mdf_versao()`.
 
 | Parte | Header |
 |---|---|
@@ -38,7 +40,7 @@ O exemplo [`examples/emitir_mdfe.c`](examples/emitir_mdfe.c) emite, consulta e e
 
 ## Dependências
 
-- [libnfe](https://github.com/icaroraci/tooldoce) 1.x, encontrada pelo `pkg-config` (`libnfe.pc`, instalado pelo `make install` do tooldoce), com as dependências dela (libxml2, xmlsec1 com OpenSSL e libcurl).
+- [libnfe](https://github.com/icaroraci/tooldoce) 1.0.0-rc3 ou posterior (o motor de grupos como API), encontrada pelo `pkg-config` (`libnfe.pc`, instalado pelo `make install` do tooldoce), com as dependências dela (libxml2, xmlsec1 com OpenSSL e libcurl).
 - libxml2, OpenSSL (`libssl-dev`) e zlib (`zlib1g-dev`, para a mensagem compactada da autorização), usadas diretamente.
 - Compilador C99 (gcc ou clang) e GNU make.
 
@@ -51,7 +53,7 @@ export PKG_CONFIG_PATH="$HOME/.local/libnfe/lib/pkgconfig"
 ## Compilação
 
 ```sh
-make                      # lib/libmdf.so (SONAME libmdf.so.0)
+make                      # lib/libmdf.so (SONAME libmdf.so.1)
 make test                 # testes com AddressSanitizer e UBSan
 make install PREFIX=/usr  # biblioteca, headers em include/libmdf e libmdf.pc
 ```

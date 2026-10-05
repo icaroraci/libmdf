@@ -90,7 +90,7 @@ libmdf: $(LIB)/$(REALNAME) $(LIB)/$(SONAME) $(LIB)/$(LIBNAME)
 $(LIB)/$(REALNAME): $(OBJ) | $(LIB)
 	$(CC) -shared -Wl,-soname,$(SONAME) $^ -o $@ $(LIBS)
 
-#Links simbólicos: libmdf.so -> libmdf.so.0 -> libmdf.so.0.1.0
+#Links simbólicos: libmdf.so -> libmdf.so.1 -> libmdf.so.1.0.0
 $(LIB)/$(SONAME): $(LIB)/$(REALNAME)
 	ln -sf $(REALNAME) $@
 
