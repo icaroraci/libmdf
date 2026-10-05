@@ -4,6 +4,15 @@ As mudanças relevantes de cada versão ficam registradas aqui. O formato segue 
 
 ## [Não lançado]
 
+### Adicionado
+
+- Grupos `infSolicNFF` (pedido de emissão da Nota Fiscal Fácil) e `infPAA` (Provedor de Assinatura e Autorização) em `mdf_mdfe_grupo`, gerados dos schemas como os demais.
+- Testes com todos os elementos do leiaute e do modal rodoviário preenchidos, validados contra os XSD: um MDF-e com todos os campos opcionais (percurso, documentos transportados com unidades de transporte e de carga, lacres e produtos perigosos, entrega parcial, seguro, lotação, responsável técnico com CSRT, ANTT com CIOT, vale-pedágio, contratantes e pagamento do frete, reboque e proprietários) e outro com os demais ramos de cada escolha (CPF no lugar de CNPJ, coordenadas no lugar de CEP, PIX etc.); `TODO.md` com todas as estruturas do leiaute concluídas.
+
+### Corrigido
+
+- A UF do reboque (`veicReboque/UF`) não podia ser preenchida: `"UF"` no grupo do reboque gravava a UF do proprietário. Corrigido no motor de grupos da libnfe (icaroraci/tooldoce#280, ainda sem versão publicada).
+
 ## [1.0.0-rc1] - 2026-10-04
 
 Candidata à primeira versão estável (1.0.0). Cobre a emissão do MDF-e 3.00 com o modal rodoviário, da montagem do XML aos eventos na SVRS, testada na homologação real (ver [`docs/HOMOLOGACAO.md`](docs/HOMOLOGACAO.md)). Requer a libnfe 1.0.0-rc3 ou posterior.

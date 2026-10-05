@@ -39,6 +39,8 @@ enum {
 	G_TOT,
 	G_INFADIC,
 	G_RESPTEC,
+	G_SOLICNFF,
+	G_PAA,
 	NGRUPOS
 };
 
@@ -55,6 +57,8 @@ static const struct {
 	[G_TOT] = { "tot", &mdf_esq_tot, 1 },
 	[G_INFADIC] = { "infAdic", &mdf_esq_infAdic, 0 },
 	[G_RESPTEC] = { "infRespTec", &mdf_esq_infRespTec, 0 },
+	[G_SOLICNFF] = { "infSolicNFF", &mdf_esq_infSolicNFF, 0 },
+	[G_PAA] = { "infPAA", &mdf_esq_infPAA, 0 },
 };
 
 /* Grupos que se repetem */
@@ -330,6 +334,10 @@ static int escreve_mdfe(xmlTextWriterPtr w, const void *dados)
 		rc = elemento(w, m->g[G_INFADIC], 0);
 	if (rc == 0)
 		rc = elemento(w, m->g[G_RESPTEC], 0);
+	if (rc == 0)
+		rc = elemento(w, m->g[G_SOLICNFF], 0);
+	if (rc == 0)
+		rc = elemento(w, m->g[G_PAA], 0);
 	if (rc != 0)
 		return rc;
 	/* </infMDFe></MDFe> */

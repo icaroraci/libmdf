@@ -17,6 +17,8 @@ NFE_INTERNO extern const struct nfe_esq mdf_esq_lacres;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_autXML;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_infAdic;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_infRespTec;
+NFE_INTERNO extern const struct nfe_esq mdf_esq_infSolicNFF;
+NFE_INTERNO extern const struct nfe_esq mdf_esq_infPAA;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_rodo;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_evCancMDFe;
 NFE_INTERNO extern const struct nfe_esq mdf_esq_evEncMDFe;
