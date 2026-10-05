@@ -24,8 +24,8 @@ jobs:
     env:
       CC: ${{ matrix.cc }}
       # Versão da libnfe (branch, tag ou commit do tooldoce) usada no CI.
-      # Precisa do caminho exato no motor de grupos (icaroraci/tooldoce#278).
-      LIBNFE_REF: master
+      # A libmdf requer a 1.0.0-rc3 ou posterior (motor de grupos como API).
+      LIBNFE_REF: v1.0.0-rc3
     steps:
       - uses: actions/checkout@v4
 
