@@ -56,4 +56,6 @@ Marque `[x]` quando a estrutura tiver: criação/liberação, setters com valida
 
 ## Além do leiaute
 
-- [x] Assinatura, transmissão e eventos
+- [x] Assinatura
+- [x] Transmissão
+- [x] Eventos
