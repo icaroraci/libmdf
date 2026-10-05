@@ -67,7 +67,9 @@ mdf_mdfe *mdf_mdfe_new(void);
 void mdf_mdfe_free(mdf_mdfe *m);
 
 /* Grupo do MDF-e com o nome do elemento: "ide", "emit", "rodo" (modal
- * rodoviário), "infDoc", "prodPred", "tot", "infAdic" ou "infRespTec".
+ * rodoviário), "infDoc", "prodPred", "tot", "infAdic", "infRespTec",
+ * "infSolicNFF" (pedido de emissão da Nota Fiscal Fácil) ou "infPAA"
+ * (Provedor de Assinatura e Autorização).
  * O grupo pertence ao MDF-e (não libere). Retorna NULL se m ou nome
  * forem NULL ou se o nome não for de um desses grupos. */
 nfe_grupo *mdf_mdfe_grupo(mdf_mdfe *m, const char *nome);

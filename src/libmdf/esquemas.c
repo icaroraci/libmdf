@@ -435,6 +435,29 @@ static const struct nfe_esq_no nos_infRespTec[] = {
 
 const struct nfe_esq mdf_esq_infRespTec = { "infRespTec", nos_infRespTec, 9, 6, 0 };
 
+static const struct nfe_esq_no nos_infSolicNFF[] = {
+	{ "infSolicNFF", ESQ_ELEM, 1, 1, NULL, NULL, 0, 0, 0, -1, 1, -1, -1, 0, 1, -1, 0, 0, NULL },
+	{ NULL, ESQ_SEQ, 1, 1, NULL, NULL, 0, 0, 0, 0, 2, -1, -1, 0, 1, -1, 0, 0, NULL },
+	{ "xSolic", ESQ_ELEM, 1, 1, "[!-\xC3\xBF]{1}[ -\xC3\xBF]{0,}[!-\xC3\xBF]{1}|[!-\xC3\xBF]{1}", NULL, 2, 8000, 1, 1, -1, -1, 0, 0, 1, -1, 0, 0, NULL },
+};
+
+const struct nfe_esq mdf_esq_infSolicNFF = { "infSolicNFF", nos_infSolicNFF, 3, 1, 0 };
+
+static const struct nfe_esq_no nos_infPAA[] = {
+	{ "infPAA", ESQ_ELEM, 1, 1, NULL, NULL, 0, 0, 0, -1, 1, -1, -1, 0, 4, -1, 0, 0, NULL },
+	{ NULL, ESQ_SEQ, 1, 1, NULL, NULL, 0, 0, 0, 0, 2, -1, -1, 0, 4, -1, 0, 0, NULL },
+	{ "CNPJPAA", ESQ_ELEM, 1, 1, "[A-Z0-9]{12}[0-9]{2}", NULL, 0, 0, 0, 1, -1, 3, 0, 0, 1, -1, 0, 0, NULL },
+	{ "PAASignature", ESQ_ELEM, 1, 1, NULL, NULL, 0, 0, 0, 1, 4, -1, -1, 1, 4, -1, 0, 0, NULL },
+	{ NULL, ESQ_SEQ, 1, 1, NULL, NULL, 0, 0, 0, 3, 5, -1, -1, 1, 4, -1, 0, 0, NULL },
+	{ "SignatureValue", ESQ_ELEM, 1, 1, "[A-Za-z0-9+/=]+", NULL, 0, 0, 0, 4, -1, 6, 1, 1, 2, -1, 0, 0, NULL },
+	{ "RSAKeyValue", ESQ_ELEM, 1, 1, NULL, NULL, 0, 0, 0, 4, 7, -1, -1, 2, 4, -1, 0, 0, NULL },
+	{ NULL, ESQ_SEQ, 1, 1, NULL, NULL, 0, 0, 0, 6, 8, -1, -1, 2, 4, -1, 0, 0, NULL },
+	{ "Modulus", ESQ_ELEM, 1, 1, "[A-Za-z0-9+/=]+", NULL, 0, 0, 0, 7, -1, 9, 2, 2, 3, -1, 0, 0, NULL },
+	{ "Exponent", ESQ_ELEM, 1, 1, "[A-Za-z0-9+/=]+", NULL, 0, 0, 0, 7, -1, -1, 3, 3, 4, -1, 0, 0, NULL },
+};
+
+const struct nfe_esq mdf_esq_infPAA = { "infPAA", nos_infPAA, 10, 4, 0 };
+
 static const struct nfe_esq_no nos_rodo_infCIOT[] = {
 	{ "infCIOT", ESQ_ELEM, 1, 1, NULL, NULL, 0, 0, 0, -1, 1, -1, -1, 0, 3, -1, 0, 0, NULL },
 	{ NULL, ESQ_SEQ, 1, 1, NULL, NULL, 0, 0, 0, 0, 2, -1, -1, 0, 3, -1, 0, 0, NULL },

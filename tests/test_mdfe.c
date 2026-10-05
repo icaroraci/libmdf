@@ -31,6 +31,7 @@
 #include <openssl/pem.h>
 
 #include <libnfe/assinatura.h>
+#include <libnfe/chave.h>
 #include <libnfe/erros.h>
 #include <libnfe/validar.h>
 #include <libmdf/mdfe.h>
@@ -145,6 +146,8 @@ static void testa_grupos(void)
 	VERIFICA_STR(nfe_grupo_get(mdf_mdfe_grupo(m, "ide"), "mod"), "58");
 	VERIFICA(mdf_mdfe_grupo(m, "rodo") != NULL);
 	VERIFICA(mdf_mdfe_grupo(m, "infRespTec") != NULL);
+	VERIFICA(mdf_mdfe_grupo(m, "infSolicNFF") != NULL);
+	VERIFICA(mdf_mdfe_grupo(m, "infPAA") != NULL);
 	VERIFICA(mdf_mdfe_grupo(m, "seg") == NULL);
 	VERIFICA(mdf_mdfe_grupo(m, "xyz") == NULL);
 	VERIFICA(mdf_mdfe_grupo(NULL, "ide") == NULL);
@@ -296,6 +299,137 @@ static void testa_assinatura(const nfe_certificado *cert, const char *tpemis)
 	mdf_mdfe_free(m);
 }
 
+/* Chave de teste (RS, CNPJ 11.222.333/0001-81) do modelo mod, em chave */
+static void chave_doc(const char *mod, char chave[45])
+{
+	memcpy(chave, "43261011222333000181", 20);
+	memcpy(chave + 20, mod, 2);
+	memcpy(chave + 22, "001000000456100000456", 21);
+	chave[43] = (char)('0' + nfe_chave_dv(chave));
+	chave[44] = '\0';
+}
+
+/* Unidade de transporte com lacre e uma unidade de carga lacrada, e um
+ * produto perigoso, no documento doc de infMunDescarga */
+static void unidades(nfe_grupo *doc)
+{
+	nfe_grupo *ut, *uc, *item;
+
+	VERIFICA_INT(nfe_grupo_add(doc, "infUnidTransp", &ut), 0);
+	SET(ut, "tpUnidTransp", "1");
+	SET(ut, "idUnidTransp", "ABC1D23");
+	VERIFICA_INT(nfe_grupo_add(ut, "lacUnidTransp", &item), 0);
+	SET(item, "nLacre", "LT001");
+	VERIFICA_INT(nfe_grupo_add(ut, "infUnidCarga", &uc), 0);
+	SET(uc, "tpUnidCarga", "1");
+	SET(uc, "idUnidCarga", "CONT1234567");
+	VERIFICA_INT(nfe_grupo_add(uc, "lacUnidCarga", &item), 0);
+	SET(item, "nLacre", "LC001");
+	SET(uc, "qtdRat", "1.00");
+	SET(ut, "qtdRat", "1.00");
+	VERIFICA_INT(nfe_grupo_add(doc, "peri", &item), 0);
+	SET(item, "nONU", "1203");
+	SET(item, "xNomeAE", "GASOLINA");
+	SET(item, "xClaRisco", "3");
+	SET(item, "grEmb", "II");
+	SET(item, "qTotProd", "100 L");
+	SET(item, "qVolTipo", "1 TAMBOR");
+}
+
+/* MDF-e com todos os grupos opcionais do leiaute preenchidos, validado
+ * contra o XSD */
+static void testa_completo(void)
+{
+	mdf_mdfe *m = mdfe_teste("1");
+	nfe_grupo *g, *mun, *doc, *item;
+	char cte[45], nfe[45], mdfe[45];
+	char *xml = NULL;
+	size_t tam = 0;
+
+	if (!m)
+		return;
+	chave_doc("57", cte);
+	chave_doc("55", nfe);
+	chave_doc("58", mdfe);
+	g = mdf_mdfe_grupo(m, "ide");
+	SET(g, "UFFim", "SC");
+	VERIFICA_INT(nfe_grupo_add(g, "infPercurso", &item), 0);
+	SET(item, "UFPer", "PR");
+
+	/* Um documento de cada tipo no município de descarga do teste */
+	mun = nfe_grupo_item(mdf_mdfe_grupo(m, "infDoc"), "infMunDescarga", 0);
+	VERIFICA(mun != NULL);
+	VERIFICA_INT(nfe_grupo_add(mun, "infCTe", &doc), 0);
+	SET(doc, "chCTe", cte);
+	SET(doc, "indReentrega", "1");
+	unidades(doc);
+	SET(doc, "infEntregaParcial/qtdTotal", "10.0000");
+	SET(doc, "infEntregaParcial/qtdParcial", "5.0000");
+	SET(doc, "indPrestacaoParcial", "1");
+	VERIFICA_INT(nfe_grupo_add(doc, "infNFePrestParcial", &item), 0);
+	SET(item, "chNFe", nfe);
+	unidades(nfe_grupo_item(mun, "infNFe", 0));
+	VERIFICA_INT(nfe_grupo_add(mun, "infMDFeTransp", &doc), 0);
+	SET(doc, "chMDFe", mdfe);
+	SET(doc, "indReentrega", "1");
+	unidades(doc);
+
+	VERIFICA_INT(mdf_mdfe_add(m, "seg", &item), 0);
+	SET(item, "infResp/respSeg", "2");
+	SET(item, "infResp/CNPJ", "11222333000181");
+	SET(item, "infSeg/xSeg", "SEGURADORA DE TESTE");
+	SET(item, "infSeg/CNPJ", "11222333000181");
+	SET(item, "nApol", "APOLICE123");
+	{
+		nfe_grupo *aver;
+
+		VERIFICA_INT(nfe_grupo_add(item, "nAver", &aver), 0);
+		SET(aver, "nAver", "AVERBACAO1");
+	}
+
+	g = mdf_mdfe_grupo(m, "prodPred");
+	SET(g, "cEAN", "SEM GTIN");
+	SET(g, "NCM", "27101259");
+	SET(g, "infLotacao/infLocalCarrega/CEP", "90010000");
+	SET(g, "infLotacao/infLocalDescarrega/latitude", "-29.917700");
+	SET(g, "infLotacao/infLocalDescarrega/longitude", "-51.183600");
+
+	g = mdf_mdfe_grupo(m, "tot");
+	SET(g, "qCTe", "1");
+	SET(g, "qMDFe", "1");
+
+	g = mdf_mdfe_grupo(m, "infRespTec");
+	SET(g, "CNPJ", "11222333000181");
+	SET(g, "xContato", "SUPORTE");
+	SET(g, "email", "suporte@exemplo.com.br");
+	SET(g, "fone", "5133334444");
+	SET(g, "idCSRT", "001");
+	SET(g, "hashCSRT", "AAAAAAAAAAAAAAAAAAAAAAAAAAA=");
+
+	SET(mdf_mdfe_grupo(m, "infSolicNFF"), "xSolic",
+	    "PEDIDO DE EMISSAO PELA NOTA FISCAL FACIL");
+	g = mdf_mdfe_grupo(m, "infPAA");
+	VERIFICA(g != NULL);
+	SET(g, "CNPJPAA", "11222333000181");
+	SET(g, "PAASignature/SignatureValue", "AAECAwQ=");
+	SET(g, "PAASignature/RSAKeyValue/Modulus", "AAECAwQ=");
+	SET(g, "PAASignature/RSAKeyValue/Exponent", "AQAB");
+
+	VERIFICA_INT(mdf_mdfe_xml(m, &xml, &tam), 0);
+	if (xml) {
+		VERIFICA_INT(valida("mdfe_v3.00.xsd", xml, tam, 1), 0);
+		VERIFICA(strstr(xml, "</infAdic><infRespTec>") != NULL);
+		VERIFICA(strstr(xml, "</infRespTec><infSolicNFF>") != NULL);
+		VERIFICA(strstr(xml, "</infSolicNFF><infPAA>") != NULL);
+		VERIFICA(strstr(xml, "</infPAA></infMDFe>") != NULL);
+		VERIFICA(strstr(xml, "<infPercurso><UFPer>PR</UFPer>") != NULL);
+		VERIFICA(strstr(xml, "<lacUnidCarga><nLacre>LC001</nLacre>") !=
+		         NULL);
+	}
+	free(xml);
+	mdf_mdfe_free(m);
+}
+
 int main(int argc, char **argv)
 {
 	nfe_certificado *cert;
@@ -304,6 +438,7 @@ int main(int argc, char **argv)
 	testa_grupos();
 	testa_chave();
 	testa_xml();
+	testa_completo();
 	cert = certificado();
 	VERIFICA(cert != NULL);
 	if (cert) {
